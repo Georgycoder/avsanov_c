@@ -9,5 +9,5 @@ int main() {
     printf("b = %f\n", b);
     printf("c = %c\n", c);
     
-    return 0;
+    return 0
 }
