@@ -13,9 +13,6 @@ int main() {
     struct Book *books;
     int n;
     
-    printf("Введите количество книг: ");
-    scanf("%d", &n);
-    
     books = (struct Book*)malloc(n * sizeof(struct Book));
     
     if(books == NULL) {
@@ -24,7 +21,6 @@ int main() {
     }
     
     for(int i = 0; i < n; i++) {
-        printf("\nКнига %d:\n", i+1);
         
         printf("Введите название: ");
         scanf(" %[^\n]", books[i].title);
