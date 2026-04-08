@@ -7,7 +7,6 @@ int main() {
     printf("Адрес b: %p\n", (void*)&b);
     printf("Адрес c: %p\n", (void*)&c);
     
-    // Вычисляем разницу между адресами
     int diff_ab = (char*)&b - (char*)&a;
     int diff_bc = (char*)&c - (char*)&b;
     

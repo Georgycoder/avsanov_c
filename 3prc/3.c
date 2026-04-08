@@ -1,21 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int N;
-    int maxdigit;
-    int temp;
-
-    printf("Введите число N: ");
-    scanf("%d", &N);
-
-    temp = N;
-
-    if(temp < 0) {
-        temp = -temp;
+    int num, reversed = 0;
+    
+    printf("Введите число: ");
+    scanf("%d", &num);
+    
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num = num / 10;
     }
     
-    while(temp > 0) {
-        int digit = temp % 10;
-    }
+    printf("Перевернутое число: %d\n", reversed);
+    
     return 0;
 }
